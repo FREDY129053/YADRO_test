@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [new URL('https://randomuser.me/**')]
-  }
+  },
+  output: "standalone",
 };
 
 export default nextConfig;

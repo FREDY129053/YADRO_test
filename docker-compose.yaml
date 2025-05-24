@@ -7,9 +7,32 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 12345
     ports:
-      - "5433:5432"
+      - "5432:5432"
     networks:
       - api_network
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/dockerfile
+    depends_on:
+      - db
+    networks:
+      - api_network
+    ports:
+      - "8080:8080"
+
+  # frontend:
+  #   build:
+  #       context: .
+  #       dockerfile: ./dockerfile
+  #   depends_on:
+  #     - db
+  #     - api
+  #   networks:
+  #     - api_network
+  #   ports:
+  #     - "3000:3000"
 
 networks:
   api_network:
