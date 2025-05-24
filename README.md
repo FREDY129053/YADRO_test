@@ -7,7 +7,7 @@
 - выполнить команду ```docker-compose up --build -d```
 - ожидать окончания сборки
 - выполнить команду: ```python -m backend.api.main```
-- перейти в папку frontend: cd frontend
+- перейти в папку frontend: ```cd frontend```
 - выполнить: ```bun(или npm) install && bun(или npm) run dev```
 - проект готов к использованию
 
@@ -24,3 +24,5 @@
 Тесты следует запускать так:
 - перейти в папку "backend"
 - Запустить команду: ```pytest api/tests/test.py```
+
+P.S. полностью через docker-compose не получилось из-за фронтенда почему-то...
