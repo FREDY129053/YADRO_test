@@ -11,16 +11,16 @@ services:
     networks:
       - api_network
 
-  api:
-    build:
-      context: .
-      dockerfile: backend/dockerfile
-    depends_on:
-      - db
-    networks:
-      - api_network
-    ports:
-      - "8080:8080"
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: backend/dockerfile
+  #   depends_on:
+  #     - db
+  #   networks:
+  #     - api_network
+  #   ports:
+  #     - "8080:8080"
 
   # frontend:
   #   build:
