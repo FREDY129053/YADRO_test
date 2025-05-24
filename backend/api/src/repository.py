@@ -1,5 +1,6 @@
-from typing import Optional
 from random import randint
+from typing import Optional
+
 from backend.api.src.db.models import User
 
 

@@ -1,6 +1,8 @@
 import math
-from pydantic import BaseModel
 from typing import Any
+
+from pydantic import BaseModel
+
 import backend.api.src.repository as UserRepo
 from backend.api.src.helpers import load_users
 

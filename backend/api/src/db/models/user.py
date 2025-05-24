@@ -5,7 +5,7 @@ from backend.api.src.enums import Gender
 
 
 class User(Model):
-    id = fields.IntField(pk=True)
+    id = fields.IntField(primary_key=True)
     name = fields.CharField(max_length=100)
     surname = fields.CharField(max_length=100)
     gender = fields.CharEnumField(enum_type=Gender)
