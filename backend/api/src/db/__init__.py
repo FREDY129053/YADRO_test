@@ -3,7 +3,7 @@ from tortoise import Tortoise
 from tortoise.contrib.fastapi import register_tortoise
 
 TORTOISE_ORM = {
-    "connections": {"default": "postgres://postgres:12345@yadro:5432/yadro_db"},
+    "connections": {"default": "postgres://postgres:12345@localhost:5433/yadro_db"},
     "apps": {
         "models": {
             "models": ["backend.api.src.db.models"],
